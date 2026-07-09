@@ -1,0 +1,173 @@
+*{
+    padding: 0;
+    margin: 0;
+     font-family: "Open Sans", sans-serif;
+}
+
+img{
+    max-width: 100%;
+}
+
+/* Common style */
+.common-btn{
+    background-color: #FD6E0A;
+    padding: 10px 20px;
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 22px;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.outline-btn{
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 22px;
+    color: orange;
+    border: 1px solid #FD6E0A;
+    cursor: pointer;
+}
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
+nav{
+    
+    display: flex;
+    justify-content: space-between;
+    
+    padding: 12px 0px;
+}
+
+.logo{
+    font-weight: bold;
+    font-size: 32px;
+}
+.logo-r{
+    color: #FD6E0A;
+}
+
+ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    gap: 10px;
+    align-items: center;
+}
+
+ul li a{
+    text-decoration: none;
+}
+
+/* Hero section style */
+.hero-parent-root{
+    background-color: #fff8f3;
+    width: 100vw;
+}
+.hero-parent{
+  display: flex;
+  justify-content: space-between;  
+  align-items: center;
+  background-color: #eadcd2;
+}
+
+.hero-left-p-1{
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.hero-left h2{
+    font-weight: bold;
+    font-size: 40px;
+    margin-bottom: 12px;
+}
+
+.hero-left-btn-parent{
+    margin-top: 12px;
+}
+
+.About-me{
+    background-color: #e8e3df;
+    padding: 50px;
+    margin-top: 100px;
+}
+
+.about-me-div-1, .about-me-div-2, .about-me-div-3{
+    text-align: center;
+    padding: 5px;
+}
+
+/* What i do section css */
+.what-i-do-parent{
+    margin: 60px auto;
+    text-align: center;
+}
+
+.what-i-do-card-container{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+.what-i-do-card-container .what-i-do-card{
+    border: 2px solid rgb(188, 130, 49);
+    padding: 8px;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.what-i-do-card-container .what-i-do-card h2{
+    margin:10px 0;
+}
+
+.what-i-do-card-container .what-i-do-card p{
+    color: #757575FF; 
+    font-size: 15px;
+}
+
+/* Amazing work section style */
+.my-amazing-parent{
+    text-align: center;
+}
+
+.gallery{
+    margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 12px;
+  grid-auto-rows: 250px;
+  grid-template-areas: 
+  "one two three"
+  "four two six"
+  "four five six"
+}
+
+.gallery img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.box-1{
+  grid-area: one;
+}
+.box-2{
+    grid-area: two;
+}
+.box-3{
+    grid-area: three;
+}
+.box-4{
+    grid-area: four;
+}
+.box-5{
+   grid-area: five; 
+}
+.box-6{
+    grid-area: six;
+}
